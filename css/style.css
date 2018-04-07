@@ -1,0 +1,1145 @@
+/*start of header*/
+.top-logo-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 11111;
+	background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 6px;
+    width: 100%;
+}
+
+.MS-logo img{
+	width: 100%;
+}
+
+/*shrink header on scroll*/
+/*change header opacity on scroll*/
+.shrink{
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*change padding of nav 'a' and change font size of nav 'a' on scroll*/
+.shrink .nav-div .navbar-default .navbar-nav > li > a{
+	padding: 8px 8px;
+	font-size: 16px;
+}
+
+/*change logo width on scroll*/
+.shrink .MS-logo img{
+	width: 80%;
+}
+
+/*Display pdf */
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*change social icon font-size on scroll*/
+.shrink .login-div .social-icon {
+    font-size: 20px;
+ }
+
+/*navbar slide right on scroll*/
+.shrink .nav-div .navbar-nav {
+    padding-left: 50px;
+}
+
+/*horizontal line in header*/
+.top-logo-nav .login-div{
+	border-bottom: 2px solid #e2bf04;
+	padding-left: 118px;
+}
+
+.top-logo-nav .login-div ul > li{
+	margin-right: 20px;
+}
+
+/*hover effect on 'subscribe' and 'login' in header*/
+.top-logo-nav .login-div ul > li > a:hover, .top-logo-nav .login-div ul > li > a:focus{
+	color: #e2bf04;
+}
+
+/*font size for 'subscribe' and 'login' in header*/
+.login-div ul > li:first-child > a, .login-div ul > li:nth-child(2) > a{
+	font-size: 14px;
+}
+
+/*font size for email icon and user icon in header*/
+.login-div ul > li:first-child > a span, .login-div ul > li:nth-child(2) > a span{
+	font-size: 16px;
+}
+
+/*social icon in header*/
+ .login-div .social-icon{
+	font-size: 25px;
+	margin-left: 8px;
+}
+
+/*position top to social-icons in header*/
+.top-logo-nav .login-div ul > li:last-child > a{
+	position: relative;
+	top: 2px;
+}
+
+/*overwrite bootstrap property in navigation*/
+.top-logo-nav .nav-div .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+ .nav-div .navbar-default .navbar-nav > li > a{
+	font-size: 20px;
+	color: #fff;
+	border-bottom: 3px solid transparent; 
+	padding: 14px 8px;
+}
+
+.top-logo-nav .nav-div .navbar-default .navbar-nav > li{
+	margin-left: 41px;
+}
+
+/*hover,focus,active on nav 'a'*/
+.nav-div .navbar-default .navbar-nav > li > a:hover, .nav-div .navbar-default .navbar-nav > li > a:focus, .nav-div .navbar-default .navbar-nav > .active > a, .nav-div .navbar-default .navbar-nav > .active > a:hover, .nav-div .navbar-default .navbar-nav > .active > a:focus {
+    color: #e2bf04;
+    border-bottom: 3px solid #e2bf04; 
+    background-color: transparent;
+}
+
+/*overwrite bootstrap property*/
+.nav-div .navbar {
+    margin-bottom: 0;
+    border: 0;
+    min-height: 0;
+}
+
+.nav-div .navbar-nav {
+    padding-left: 10px;
+}
+/*end of header*/
+
+/*down animated arrow- used in all pages (banner)*/
+.arrow span{
+	font-size: 40px;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+ 	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*start of slider*/
+.MS-top-slider{
+	width: 100%;
+	position: relative;
+}
+
+.MS-top-slider .carousel-inner img{
+	width: 100%;
+}
+
+/*down arrow position in top-slider-home page*/
+.MS-top-slider .arrow{
+  	position: absolute;
+  	left: 50%;
+ 	top: 90%;
+ 	z-index: 1;
+}
+
+/*text on top-slider-home page*/
+.MS-top-slider .slider-text-div{
+	border-bottom: 2px solid #fff; 
+	font-family: 'earth_orbiter_expandeexpanded';
+}
+
+/*overwrite bootstrap property*/
+.MS-top-slider .carousel-caption {
+    position: absolute;
+    bottom: 271px;
+    z-index: 10;
+    color: #fff;
+    text-shadow: 0 1px 2px 0.6;
+}
+
+/*overwrite bootstrap property*/
+.MS-top-slider .carousel-caption {
+    right: 0;
+    left: 0;
+    padding-bottom: 0;
+}
+
+/*remove background(arrow) from top-slider-home page*/
+.MS-top-slider .carousel-control.left, .MS-top-slider .carousel-control.right{
+	background-image: none;
+}
+/*end of slider*/
+
+/*start of MS-technology section */
+.MS-technology-div{
+	position: relative;
+	min-height: 408px;
+}
+
+.MS-technology .technology-text{
+	margin: 30px 0;
+}
+
+.MS-technology .tech-icon-div{
+	background-color: #505050;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 auto;
+	height: 160px;
+	width: 160px;
+}
+
+.MS-technology .tech-icon{
+	font-size: 70px;
+	line-height: 160px;
+	transition: color 0.6s ease-out, background 0.6s ease-in;
+}
+
+.ms-search-seo .path1:before, .ms-search-seo .path2:before{
+	transition: color 0.6s ease-out, background 0.6s ease-in;
+}
+
+/*change icon-div color on hover*/
+.MS-technology .MS-technology-div:hover .tech-icon-div{
+	background-color: #e2bf04;
+}
+
+/*change icon color on hover*/
+.MS-technology .MS-technology-div:hover .tech-icon{
+	color: #505050;
+}
+
+/*change icon color on hover*/
+.MS-technology .MS-technology-div:hover .ms-search-seo .path1:before, .MS-technology .MS-technology-div:hover .ms-search-seo .path2:before {
+  color: rgb(80, 80, 80);
+}
+
+/*change heading(MS-technology-div) color on hover*/
+.MS-technology .MS-technology-div:hover h6{
+	color: #e2bf04;
+}
+
+.MS-technology h6{
+	margin: 20px 0 20px;
+}
+
+.MS-technology-div:hover .div-text, .MS-technology-div:focus .div-text{
+	color: #313131;
+}
+
+.MS-technology .more{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+/*end of MS-technology section */
+
+/*start of guarantee section*/
+.guarantee{
+	background-image: url(../img/guarantee-bg-img.jpg);
+	height: auto;
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+.guarantee .idea-img{
+	margin: -42px auto;
+}
+
+.guarantee .guarantee-row-1{
+	margin-bottom: 55px;
+}
+
+.guarantee .stamp-img{
+	margin: 25px 0 0 40px;
+}
+
+.guarantee ul > li{
+	margin-left: -28px;
+}
+/*end of guarantee section*/
+
+/*used in home page- our-services section, our-partners section and services page*/
+.div-width-20percent{
+	width: 20%;
+}
+
+/*start of our services*/
+.our-services h2{
+	margin-bottom: 50px;
+}
+
+.our-services img{
+	margin: 0 auto;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: gray;
+}
+
+.our-services img:hover{
+	filter: grayscale(0);
+  	transition: 0.3s;
+}
+/*end of our services*/
+
+/*start of process section- home page*/
+.process{
+	background-image: url(../img/process-bg-img.jpg);
+	height: auto;
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.process h3{
+	margin-bottom: 20px;
+}
+
+.process .find-btn{
+	margin: 20px auto 0;
+}
+/*end of process section- home page*/
+
+/*start of our work slider section*/
+.our-work h2{
+	margin-bottom: 60px;
+}
+
+.our-work .our-work-btn{
+	margin: 50px auto 0;
+}
+
+/*bx-slider arrow right*/
+.bx-wrapper .bx-next {
+    right: -74px;
+}
+/*end of our work slider section*/
+
+/*start of our partners section*/
+.our-partners h2{
+	margin-bottom: 50px;
+}
+/*end of our partners section*/
+
+
+/*start of link pages css*/
+.link-page-banner{
+	height: 650px;
+	position: relative;
+}
+
+/*animated down arrow used on banner- all link pages */
+.link-page-banner .arrow {
+  text-align: center;
+  margin: 50% 0;
+}
+
+/*used in about-us and services page*/
+.link-page-section-1 h2{
+	margin-bottom: 50px;
+}
+
+/*used in about-us and services page - first paragraph*/
+.link-page-section-1 p{
+	line-height: 30px;
+}
+
+/*used in about-us and services page*/
+.yellow-strip{
+	background-color: #e2bf04;
+	padding: 40px 0;
+	font-size: 36px;
+}
+
+/*start of services page*/
+.services-banner{
+	background-image: url(../img/services-banner.jpg);
+}
+
+.services-section1 .tab-menu{
+	margin-top: 35px;
+}
+
+.services-section1 .nav-tabs > li + li {
+    margin-left: 0;
+}
+
+.services-section1 .nav > li > a:hover, .services-section1 .nav > li > a:focus {
+    background-color: transparent;
+    filter: grayscale(0);
+  	transition: 0.3s;
+  	border: 0;
+}
+
+.services-section1 .nav-tabs > li.active > a, .services-section1 .nav-tabs > li.active > a:hover, .services-section1 .nav-tabs > li.active > a:focus {
+    background-color: transparent;
+    filter: grayscale(0);
+  	transition: 0.3s;
+  	border: 0;
+}
+
+.services-section1 .nav-tabs > li > a{
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	border: 0;
+}
+
+.services-section2 .tab-image{
+	margin-bottom: 40px;
+}
+
+.services-section2{
+	padding: 30px 0;
+}
+
+.services-section2-container{
+	padding: 40px;
+	border: 1px solid #464646;
+}
+
+.services-section2 .tab-content a:hover, .services-section2 .tab-content a:focus{
+	color: #e2bf04;
+}
+
+/*end of services page*/
+
+/*start of about-us page*/
+.about-us-banner{
+	background-image: url(../img/about-us-banner.jpg);
+}
+
+.about-us-section2 h4{
+	margin-bottom: 50px;
+}
+
+.about-us-section2 img, .about-us-section3 img{
+	margin: 0 auto;
+}
+/*end of about-us page*/
+
+/*start of contact-us page*/
+.contact-us-banner{
+	background-image: url(../img/contact-us-banner.jpg);
+}
+
+.contact-us-form h2{
+	margin-bottom: 35px;
+}
+
+.contact-us-form .form-control{
+	border-radius: 0;
+	border: 1px solid #8a8a8a;
+	margin-bottom: 30px;
+} 
+
+.contact-us-form .form-control:focus {border: 1px solid #e2bf04; box-shadow: none;}
+
+.contact-us-form input{
+	height: 45px;
+}
+
+.contact-us-form textarea.form-control{
+	height: 145px;
+}
+
+.contact-us-form form{
+	padding: 40px 55px;
+	border: 1px solid #8a8a8a;
+}
+
+.contact-us-form .send-btn{
+	width: 100px;
+}
+
+.contact-details span{
+	font-size: 30px;
+}
+
+.contact-us-email:hover {
+	color: #e2bf04;
+}
+/*end of contact-us page*/
+
+/*start of technology-more page (link from home page section-1)*/
+.techno-more-banner{
+	background-image: url(../img/techn-more-banner.jpg);
+}
+
+.techno-more .tab-content{
+	margin-top: 60px;
+}
+
+.techno-more .tab-content .tab-pane .tab-icon{
+	color: #464646;
+	font-size: 120px;
+}
+
+.techno-more .tab-content .tab-pane .ms-search-seo .path1:before {
+ color: #464646;
+}
+.techno-more .tab-content .tab-pane .ms-search-seo .path2:before {
+  color: #464646;
+}
+
+.techno-more .tab-content .tab-pane h4{
+	margin: 40px 0 25px;
+}
+
+.techno-more .nav > li > a {
+    position: relative;
+    display: block;
+    width: 247px;
+    height: 60px;
+   	padding: 5px 0;
+    border: 2px solid #e2bf04;
+    background-color: transparent;
+}
+
+.techno-more .nav-tabs > li > a {
+    border-radius: 0;
+}
+
+.techno-more .nav-tabs > li.active > a, .techno-more .nav-tabs > li.active > a:hover, .techno-more .nav-tabs > li.active > a:focus {
+    color: #fff;
+    background-color: #e2bf04;
+}
+
+.techno-more .nav > li > a:hover, .techno-more .nav > li > a:focus {
+    border: 2px solid #e2bf04;
+    color: #e2bf04;
+    background-color: transparent;
+}
+
+
+.techno-more .nav > li:first-child > a, .techno-more .nav > li:last-child > a{
+	padding: 16px 0;
+}
+
+.techno-more .nav-tabs > li + li {
+    margin-left: 38px;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+/*end of link pages*/
+
+/*start of footer*/
+footer{
+	background-color: #303030;
+	padding-top: 10px;
+}
+
+footer li{
+	margin-left: 40px;
+}
+
+footer ul{
+    text-align: right;
+}
+
+footer a, p{
+	font-family: 'centrale_sans_regularregular';
+}
+
+footer a:hover, footer a:focus{
+	color: #fff;
+}
+/*end of footer*/
+
+@media only screen and (max-width: 1280px){
+	.MS-logo img{
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.shrink .nav-div .navbar-nav {
+    	padding-left: 2px;
+	}
+
+	.MS-logo img {
+       margin-top: 0px;
+    }
+
+	.top-logo-nav .login-div{
+    	padding-left: 55px;
+	}
+
+	.nav-div .navbar-default .navbar-nav > li > a{
+		padding: 14px 5px;
+	}
+
+	.top-logo-nav .nav-div .navbar-default .navbar-nav > li{
+		margin-left: 17px;
+	}
+
+	.login-div .social-icon{
+		margin-left: 5px;
+	}
+
+	.top-logo-nav .login-div ul > li {
+        margin-right: 7px;
+    }
+
+    .shrink .nav-div .navbar-nav {
+       margin-left: 23px;
+    }
+
+   .MS-top-slider .carousel-caption {
+    	bottom: 167px;
+	}
+
+	.MS-top-slider .slider-text-div h3{
+		font-size: 24px;
+	}
+
+	.MS-technology .tech-icon-div {
+	    height: 145px;
+	    width: 145px;
+	}
+
+	.MS-technology .tech-icon {
+    	font-size: 61px;
+    	line-height: 145px;
+    }
+
+    .techno-more .nav-tabs > li + li {
+       margin-left: 14px;
+    }
+
+    .techno-more .nav > li > a {
+    	width: 215px;
+    }
+
+    .link-page-banner {
+        height: 510px;
+    }
+
+    .link-page-banner .arrow {
+    	margin: 47% 0;
+	}
+}
+
+@media only screen and (max-width: 980px){
+	.MS-logo img{
+		margin-top: 0;
+	}
+
+	.MS-technology-div {
+       min-height: 343px;
+       margin-top: 36px;
+    }
+
+    .MS-top-slider .arrow {
+	    top: 82%;
+	}
+
+    .guarantee .idea-img {
+    	margin: 0 auto;
+	}
+
+	.guarantee .stamp-img {
+    	margin: 0 auto;
+	}
+
+	.link-page-banner {
+       height: 481px;
+    }
+
+	.link-page-banner .arrow {
+        margin: 56% 0;
+    }
+
+	.techno-more .nav > li > a {
+       width: 166px;
+    }
+
+    .techno-more .nav-tabs > li + li {
+       margin-left: 6px;
+    }
+
+    .techno-more .nav > li:first-child > a{
+       padding: 5px 0;
+    }
+
+	footer li {
+    	margin-left: 19px;
+	}
+}
+
+@media only screen and (max-width: 840px){
+    .MS-logo img {
+       margin-top: 12px;
+    }
+
+    .MS-top-slider .carousel-caption {
+    	bottom: 151px;
+	}
+
+    .link-page-banner {
+    	height: 433px;
+	}
+
+	.link-page-banner .arrow {
+    	margin: 51% 0;
+	}
+
+	.MS-top-slider .slider-text-div h3 {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+	.MS-logo img {
+    	margin-top: 14px;
+	}
+
+	.MS-top-slider .carousel-caption {
+    	bottom: 130px;
+	}
+
+	.top-logo-nav .nav-div .navbar-default .navbar-nav > li {
+    	margin-left: 13px;
+	}
+
+	.top-logo-nav .login-div ul > li {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 720px){
+	.MS-logo img {
+    	margin-top: -5px;
+	}
+
+	.shrink .MS-logo img{
+	   width: 50%;
+	}
+
+	.MS-logo img{
+		width: 50%;
+	}
+
+	.link-page-banner {
+    	height: 400px;
+	}
+
+	.nav-below-720 .navbar-inverse {
+    	background-color: transparent;
+    	border-color: transparent;
+	}
+
+	.nav-below-720 .navbar-toggle{
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+
+	.nav-below-720 .navbar-inverse .navbar-toggle:focus, .nav-below-720 .navbar-inverse .navbar-toggle:hover {
+    	background-color: #333;
+	}
+
+	.nav-below-720 .nav > li > a:focus, .nav-below-720 .nav > li > a:hover {
+    	background-color: transparent;
+    	color: #e2bf04;
+	}
+
+	.nav-below-720 .nav .open > a, .nav-below-720 .nav .open > a:focus, .nav-below-720 .nav .open > a:hover {
+    	background-color: transparent;
+	}
+
+	.nav-below-720 .dropdown-menu > li > a:focus, .nav-below-720 .dropdown-menu > li > a:hover {
+    	color: #262626;
+    	text-decoration: none;
+    	background-color: transparent;
+	}
+
+	.nav-below-720 .MS-nav{
+		width: 175px;
+		position: absolute;
+		right: 0;
+		background-color: black;
+	}
+
+	.nav-below-720 .navbar {
+    	margin-bottom: 0;
+	}	
+
+	.nav-below-720 .navbar-inverse .navbar-toggle:focus, .nav-below-720 .navbar-inverse .navbar-toggle:hover {
+    	background-color: #e2bf04;
+	}
+
+	.nav-below-720 .navbar-inverse .navbar-toggle {
+   		border: 0;
+    	margin-top: 20px;
+    	background-color: #e2bf04;
+	}
+
+	.nav-below-720 li > a{
+		color: #fff;
+	}
+
+	.nav-below-720 .dropdown-menu > li > a:focus, .nav-below-720 .dropdown-menu > li > a:hover {
+   	 	color: #e2bf04;
+	}
+
+	.MS-top-slider .slider-text-div h3 {
+    	font-size: 16px;
+	}
+
+	.arrow span {
+    	font-size: 28px;
+	}
+
+	.MS-top-slider .arrow {
+    	top: 88%;
+	}
+
+	.MS-technology .more {
+	    position: static;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	}
+
+	.MS-technology-div {
+    	min-height: auto;
+	} 
+
+    .techno-more .nav > li > a {
+    	width: 158px;
+	}
+
+	.our-services img {
+    	margin-bottom: 33px;
+	}
+
+	.our-services .home-ux4{
+    	margin-bottom: 0;
+	}
+
+	.our-services h2 {
+      margin-bottom: 30px;
+    }
+
+	.services-section2{
+    	padding: 30px 20px;
+	}
+
+	.contact-detail-div{
+		margin-bottom: 30px;
+	}
+
+	footer li{
+		margin-right: 15px;
+		margin-left: 0;
+	}
+
+	footer .lg {
+     	font-size: 15px;
+    }
+
+    footer ul{
+    	text-align: left;
+    }
+
+}
+
+@media only screen and (max-width: 640px){
+	.MS-logo img {
+    	width: 60%;
+	}
+
+	.shrink .MS-logo img{
+	   width: 60%;
+	}
+
+	.techno-more .nav > li > a {
+    	width: 138px;
+    	font-size: 14px;
+	}
+
+	.link-page-banner {
+    	height: 373px;
+	}
+
+	.link-page-banner .arrow {
+    	margin: 54% 0;
+	}
+	
+}
+
+@media only screen and (max-width: 480px){
+	.MS-logo img {
+    	width: 68%;
+	}
+
+	.shrink .MS-logo img{
+	   width: 68%;
+	}
+
+	.nav-below-720 .navbar-inverse .navbar-toggle {
+    	margin-top: 10px;
+    }
+
+    .MS-top-slider .carousel-caption {
+    	bottom: 96px;
+	}
+
+    .MS-top-slider .slider-text-div h3 {
+    	font-size: 13px;
+	}
+
+	.MS-top-slider .carousel-inner img {
+    	height: 270px;
+	}
+	
+	footer .lg {
+    	font-size: 11px;
+	}
+
+	.link-page-banner .arrow {
+    	margin: 62% 0;
+	}
+
+	.techno-more .nav > li > a {
+    	width: 98px;
+    	font-size: 10px;
+    	height: 49px;
+	}
+
+	.link-page-banner {
+    	height: 322px;
+	}
+
+	.yellow-strip {
+    	background-color: #e2bf04;
+    	padding: 19px 0;
+    	font-size: 22px;
+	}
+
+	.our-partners h2 {
+    	margin-bottom: 29px;
+	}
+
+	.about-us-section2 h4 {
+    	margin-bottom: 27px;
+	}
+
+	h4{
+		font-size: 20px;
+	}
+
+	h2 {
+   		font-size: 25px;
+	}
+
+	.contact-us-form form {
+    	padding: 25px 15px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	.padding-top-bot {
+    	padding: 25px 0;
+	}
+
+	.MS-logo img {
+    	width: 100%;
+	}
+
+	.shrink .MS-logo img{
+	   width: 100%;
+	}
+
+	.MS-top-slider .carousel-caption {
+    	bottom: 66px;
+	}
+
+	.MS-top-slider .carousel-inner img {
+    	height: 200px;
+	}
+
+	.MS-top-slider .slider-text-div h3 {
+    	font-size: 11px;
+	}
+
+	.arrow span, h4{
+    	font-size: 18px;
+	}
+
+	.MS-technology .tech-icon-div {
+    	height: 130px;
+    	width: 130px;
+	}
+
+	.MS-technology .tech-icon {
+    	line-height: 130px;
+	}
+
+	.our-services h2 {
+    	margin-bottom: 20px;
+	}
+
+	.our-services img {
+    	margin-bottom: 20px;
+	}
+
+	.link-page-banner .arrow {
+    	margin: 53% 0;
+	}
+
+    .link-page-banner {
+    	height: 233px;
+	}
+
+	.link-page-banner {
+    	height: 207px;
+	}
+
+	.contact-us-form form {
+    padding: 15px 8px;
+	}
+
+	.xlg {
+    	font-size: 13px;
+	}
+
+	.link-page-section-1 h2 {
+    	margin-bottom: 9px;
+   	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	.xsm, .sm{
+		font-size: 12px;
+	}
+
+	.services-section2-container {
+    	padding: 15px;
+    }
+
+    .services-section1 .tab-menu {
+    	margin-top: 0;
+	}
+
+	.techno-more .nav > li > a {
+    	width: 68px;
+    	font-size: 8px;
+	}
+
+	.techno-more .tab-content .tab-pane h4 {
+    	margin: 23px 0 11px;
+	}
+
+	.techno-more .tab-content .tab-pane .tab-icon {
+    	font-size: 78px;
+	}
+
+	.our-work h2 {
+    	margin-bottom: 24px;
+	}
+
+	.btn-white {
+    	width: 100px;
+    	height: 40px;
+	}
+
+	.btn-yellow {
+    	width: 150px;
+    	height: 40px;
+    }
+
+    .contact-us-form .send-btn {
+    	width: 72px;
+	}
+
+	.MS-button a {
+    	line-height: 40px;
+    }
+
+    .process {
+    	padding: 30px 0;
+	}
+
+	.services-section2 .tab-image {
+    	margin-bottom: 12px;
+	}	
+
+	footer li {
+    	margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 320px){
+	.MS-logo img {
+    	margin-top: 2px;
+	}
+
+	.MS-top-slider .slider-text-div {
+    	border-bottom: 1px solid #fff;
+    	width: 73%;
+	}
+
+	.MS-top-slider .slider-text-div h3 {
+    	font-size: 10px;
+    	margin: 0;
+	}
+
+	.MS-top-slider .carousel-caption {
+    	bottom: 80px;
+	}
+
+	.techno-more .nav > li > a {
+    	width: 58px;
+   	 	font-size: 7px;
+	}
+
+	.link-page-banner .arrow {
+    	margin: 60% 0;
+	}
+
+	.xlg {
+    	font-size: 11px;
+	}
+
+	.contact-us-form form {
+        padding: 15px 0;
+	}
+
+	h3 {
+    	font-size: 22px;
+	}
+
+}
